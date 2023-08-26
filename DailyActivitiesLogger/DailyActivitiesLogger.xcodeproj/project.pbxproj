@@ -16,6 +16,12 @@
 		3A170CBD2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CBC2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift */; };
 		3A170CC72A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */; };
 		3A170CC92A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */; };
+		3A170CE02A9A674600D8EBCE /* CreateActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */; };
+		3A170CE22A9A675500D8EBCE /* RemoveActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */; };
+		3A170CE42A9A676100D8EBCE /* EditActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */; };
+		3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */; };
+		3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */; };
+		3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		3A170CC22A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyActivitiesLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITests.swift; sourceTree = "<group>"; };
 		3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityUseCase.swift; sourceTree = "<group>"; };
+		3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveActivityUseCase.swift; sourceTree = "<group>"; };
+		3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityUseCase.swift; sourceTree = "<group>"; };
+		3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteActivityUseCase.swift; sourceTree = "<group>"; };
+		3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortActivitiesUseCases.swift; sourceTree = "<group>"; };
+		3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterActivitiesUseCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +110,12 @@
 		3A170CA52A9A63EF00D8EBCE /* DailyActivitiesLogger */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */,
-				3A170CA82A9A63EF00D8EBCE /* ContentView.swift */,
-				3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */,
-				3A170CAF2A9A63F100D8EBCE /* Persistence.swift */,
-				3A170CB12A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld */,
+				3A170CDA2A9A64E000D8EBCE /* Data */,
+				3A170CD92A9A64CC00D8EBCE /* UI */,
+				3A170CD82A9A645400D8EBCE /* Domain */,
+				3A170CD72A9A644300D8EBCE /* Infrastructure */,
+				3A170CD62A9A643D00D8EBCE /* Common */,
+				3A170CD52A9A643500D8EBCE /* App */,
 				3A170CAC2A9A63F100D8EBCE /* Preview Content */,
 			);
 			path = DailyActivitiesLogger;
@@ -111,7 +124,6 @@
 		3A170CAC2A9A63F100D8EBCE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CAD2A9A63F100D8EBCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -131,6 +143,92 @@
 				3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */,
 			);
 			path = DailyActivitiesLoggerUITests;
+			sourceTree = "<group>";
+		};
+		3A170CD52A9A643500D8EBCE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CAD2A9A63F100D8EBCE /* Preview Assets.xcassets */,
+				3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */,
+				3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3A170CD62A9A643D00D8EBCE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3A170CD72A9A644300D8EBCE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3A170CD82A9A645400D8EBCE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CDB2A9A667800D8EBCE /* Use cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3A170CD92A9A64CC00D8EBCE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CA82A9A63EF00D8EBCE /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3A170CDA2A9A64E000D8EBCE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CAF2A9A63F100D8EBCE /* Persistence.swift */,
+				3A170CB12A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A170CDB2A9A667800D8EBCE /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CEC2A9A681500D8EBCE /* Reminders */,
+				3A170CE72A9A679F00D8EBCE /* Displaying activiy */,
+				3A170CDE2A9A673400D8EBCE /* Manage activity */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		3A170CDE2A9A673400D8EBCE /* Manage activity */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */,
+				3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */,
+				3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */,
+				3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */,
+			);
+			path = "Manage activity";
+			sourceTree = "<group>";
+		};
+		3A170CE72A9A679F00D8EBCE /* Displaying activiy */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */,
+				3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */,
+			);
+			path = "Displaying activiy";
+			sourceTree = "<group>";
+		};
+		3A170CEC2A9A681500D8EBCE /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reminders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A170CE42A9A676100D8EBCE /* EditActivityUseCase.swift in Sources */,
+				3A170CE02A9A674600D8EBCE /* CreateActivityUseCase.swift in Sources */,
+				3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */,
 				3A170CB02A9A63F100D8EBCE /* Persistence.swift in Sources */,
 				3A170CA92A9A63EF00D8EBCE /* ContentView.swift in Sources */,
 				3A170CB32A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld in Sources */,
+				3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */,
+				3A170CE22A9A675500D8EBCE /* RemoveActivityUseCase.swift in Sources */,
+				3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */,
 				3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
