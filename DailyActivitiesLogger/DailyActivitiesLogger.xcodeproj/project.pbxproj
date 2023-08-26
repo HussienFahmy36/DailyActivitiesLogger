@@ -8,22 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */; };
-		3A170CA92A9A63EF00D8EBCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA82A9A63EF00D8EBCE /* ContentView.swift */; };
+		3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */; };
 		3A170CAB2A9A63F100D8EBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */; };
 		3A170CAE2A9A63F100D8EBCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A170CAD2A9A63F100D8EBCE /* Preview Assets.xcassets */; };
-		3A170CB02A9A63F100D8EBCE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CAF2A9A63F100D8EBCE /* Persistence.swift */; };
-		3A170CB32A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CB12A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld */; };
 		3A170CBD2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CBC2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift */; };
 		3A170CC72A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */; };
 		3A170CC92A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */; };
-		3A170CE02A9A674600D8EBCE /* CreateActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */; };
-		3A170CE22A9A675500D8EBCE /* RemoveActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */; };
-		3A170CE42A9A676100D8EBCE /* EditActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */; };
-		3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */; };
-		3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */; };
-		3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */; };
+		3A170CE92A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */; };
+		3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */; };
 		3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */; };
-		3A170CF12A9A68D700D8EBCE /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */; };
+		3A170CF12A9A68D700D8EBCE /* DALUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */; };
+		3A170D0D2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */; };
+		3A170D0F2A9A82F300D8EBCE /* DALActivityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */; };
+		3A170D112A9A841000D8EBCE /* ActivityListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */; };
+		3A170D142A9A850D00D8EBCE /* ActivitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */; };
+		3A170D1A2A9A880600D8EBCE /* DALActivitiesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */; };
+		3A170D1D2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */; };
+		3A170D1F2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */; };
+		3A170D222A9A892600D8EBCE /* DALActivityRealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */; };
+		3A170D242A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,24 +49,27 @@
 /* Begin PBXFileReference section */
 		3A170CA32A9A63EF00D8EBCE /* DailyActivitiesLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyActivitiesLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerApp.swift; sourceTree = "<group>"; };
-		3A170CA82A9A63EF00D8EBCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
 		3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A170CAD2A9A63F100D8EBCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A170CAF2A9A63F100D8EBCE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3A170CB22A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyActivitiesLogger.xcdatamodel; sourceTree = "<group>"; };
 		3A170CB82A9A63F100D8EBCE /* DailyActivitiesLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyActivitiesLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CBC2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerTests.swift; sourceTree = "<group>"; };
 		3A170CC22A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyActivitiesLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITests.swift; sourceTree = "<group>"; };
 		3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityUseCase.swift; sourceTree = "<group>"; };
-		3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveActivityUseCase.swift; sourceTree = "<group>"; };
-		3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityUseCase.swift; sourceTree = "<group>"; };
-		3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteActivityUseCase.swift; sourceTree = "<group>"; };
-		3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortActivitiesUseCases.swift; sourceTree = "<group>"; };
-		3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterActivitiesUseCases.swift; sourceTree = "<group>"; };
+		3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayActivitiesUseCase.swift; sourceTree = "<group>"; };
+		3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterActivitiesUseCase.swift; sourceTree = "<group>"; };
 		3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityReminderUseCase.swift; sourceTree = "<group>"; };
-		3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALUseCase.swift; sourceTree = "<group>"; };
+		3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivityEntity.swift; sourceTree = "<group>"; };
+		3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListUseCase.swift; sourceTree = "<group>"; };
+		3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModel.swift; sourceTree = "<group>"; };
+		3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRepository.swift; sourceTree = "<group>"; };
+		3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListDataSource.swift; sourceTree = "<group>"; };
+		3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRealmDataSource.swift; sourceTree = "<group>"; };
+		3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivityRealmEntity.swift; sourceTree = "<group>"; };
+		3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemDisplayable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,8 @@
 		3A170CD82A9A645400D8EBCE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3A170CEF2A9A68C800D8EBCE /* Interfaces */,
+				3A170D0B2A9A826200D8EBCE /* Repositories */,
 				3A170CDB2A9A667800D8EBCE /* Use cases */,
 			);
 			path = Domain;
@@ -184,7 +192,7 @@
 		3A170CD92A9A64CC00D8EBCE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CA82A9A63EF00D8EBCE /* ContentView.swift */,
+				3A170D122A9A84EF00D8EBCE /* ActivitiesList */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -192,8 +200,7 @@
 		3A170CDA2A9A64E000D8EBCE /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CAF2A9A63F100D8EBCE /* Persistence.swift */,
-				3A170CB12A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld */,
+				3A170D182A9A87BE00D8EBCE /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -201,7 +208,6 @@
 		3A170CDB2A9A667800D8EBCE /* Use cases */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CEF2A9A68C800D8EBCE /* Protocols */,
 				3A170CEC2A9A681500D8EBCE /* Reminders */,
 				3A170CE72A9A679F00D8EBCE /* Displaying activiy */,
 				3A170CDE2A9A673400D8EBCE /* Manage activity */,
@@ -212,10 +218,7 @@
 		3A170CDE2A9A673400D8EBCE /* Manage activity */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CDF2A9A674600D8EBCE /* CreateActivityUseCase.swift */,
-				3A170CE12A9A675500D8EBCE /* RemoveActivityUseCase.swift */,
-				3A170CE32A9A676100D8EBCE /* EditActivityUseCase.swift */,
-				3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */,
+				3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */,
 			);
 			path = "Manage activity";
 			sourceTree = "<group>";
@@ -223,8 +226,8 @@
 		3A170CE72A9A679F00D8EBCE /* Displaying activiy */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */,
-				3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */,
+				3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */,
+				3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */,
 			);
 			path = "Displaying activiy";
 			sourceTree = "<group>";
@@ -237,12 +240,58 @@
 			path = Reminders;
 			sourceTree = "<group>";
 		};
-		3A170CEF2A9A68C800D8EBCE /* Protocols */ = {
+		3A170CEF2A9A68C800D8EBCE /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */,
+				3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */,
+				3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */,
 			);
-			path = Protocols;
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		3A170D0B2A9A826200D8EBCE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3A170D122A9A84EF00D8EBCE /* ActivitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */,
+				3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */,
+				3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */,
+			);
+			path = ActivitiesList;
+			sourceTree = "<group>";
+		};
+		3A170D182A9A87BE00D8EBCE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A170D202A9A88F700D8EBCE /* Entities */,
+				3A170D1B2A9A886E00D8EBCE /* Data Sources */,
+				3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3A170D1B2A9A886E00D8EBCE /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */,
+				3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		3A170D202A9A88F700D8EBCE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,17 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A170CE42A9A676100D8EBCE /* EditActivityUseCase.swift in Sources */,
-				3A170CE02A9A674600D8EBCE /* CreateActivityUseCase.swift in Sources */,
-				3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */,
-				3A170CB02A9A63F100D8EBCE /* Persistence.swift in Sources */,
-				3A170CA92A9A63EF00D8EBCE /* ContentView.swift in Sources */,
+				3A170D0D2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift in Sources */,
+				3A170D142A9A850D00D8EBCE /* ActivitiesListViewModel.swift in Sources */,
+				3A170D1A2A9A880600D8EBCE /* DALActivitiesListRepository.swift in Sources */,
+				3A170D222A9A892600D8EBCE /* DALActivityRealmEntity.swift in Sources */,
+				3A170D112A9A841000D8EBCE /* ActivityListUseCase.swift in Sources */,
+				3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift in Sources */,
+				3A170D242A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift in Sources */,
+				3A170D1F2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift in Sources */,
+				3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */,
 				3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */,
-				3A170CB32A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld in Sources */,
-				3A170CF12A9A68D700D8EBCE /* UseCaseProtocol.swift in Sources */,
-				3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */,
-				3A170CE22A9A675500D8EBCE /* RemoveActivityUseCase.swift in Sources */,
-				3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */,
+				3A170CF12A9A68D700D8EBCE /* DALUseCase.swift in Sources */,
+				3A170D1D2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift in Sources */,
+				3A170D0F2A9A82F300D8EBCE /* DALActivityEntity.swift in Sources */,
+				3A170CE92A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift in Sources */,
 				3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,19 +757,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3A170CB12A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3A170CB22A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodel */,
-			);
-			currentVersion = 3A170CB22A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodel */;
-			path = DailyActivitiesLogger.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3A170C9B2A9A63EF00D8EBCE /* Project object */;
 }

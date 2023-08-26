@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct DailyActivitiesLoggerApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ActivitiesListView(viewModel:
+                                ActivitiesListViewModel(
+                                    useCase:
+                                        ActivityListUseCase(
+                                            repo: DALActivitiesListRepository(
+                                                dataSource: DALActivitiesListRealmDataSource()))))
         }
     }
 }
