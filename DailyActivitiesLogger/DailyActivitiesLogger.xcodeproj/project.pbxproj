@@ -22,6 +22,8 @@
 		3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */; };
 		3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */; };
 		3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */; };
+		3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */; };
+		3A170CF12A9A68D700D8EBCE /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		3A170CE52A9A676F00D8EBCE /* DeleteActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteActivityUseCase.swift; sourceTree = "<group>"; };
 		3A170CE82A9A67C000D8EBCE /* SortActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortActivitiesUseCases.swift; sourceTree = "<group>"; };
 		3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterActivitiesUseCases.swift; sourceTree = "<group>"; };
+		3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityReminderUseCase.swift; sourceTree = "<group>"; };
+		3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 		3A170CDB2A9A667800D8EBCE /* Use cases */ = {
 			isa = PBXGroup;
 			children = (
+				3A170CEF2A9A68C800D8EBCE /* Protocols */,
 				3A170CEC2A9A681500D8EBCE /* Reminders */,
 				3A170CE72A9A679F00D8EBCE /* Displaying activiy */,
 				3A170CDE2A9A673400D8EBCE /* Manage activity */,
@@ -227,8 +232,17 @@
 		3A170CEC2A9A681500D8EBCE /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */,
 			);
 			path = Reminders;
+			sourceTree = "<group>";
+		};
+		3A170CEF2A9A68C800D8EBCE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3A170CF02A9A68D700D8EBCE /* UseCaseProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +380,9 @@
 				3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCases.swift in Sources */,
 				3A170CB02A9A63F100D8EBCE /* Persistence.swift in Sources */,
 				3A170CA92A9A63EF00D8EBCE /* ContentView.swift in Sources */,
+				3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */,
 				3A170CB32A9A63F100D8EBCE /* DailyActivitiesLogger.xcdatamodeld in Sources */,
+				3A170CF12A9A68D700D8EBCE /* UseCaseProtocol.swift in Sources */,
 				3A170CE92A9A67C000D8EBCE /* SortActivitiesUseCases.swift in Sources */,
 				3A170CE22A9A675500D8EBCE /* RemoveActivityUseCase.swift in Sources */,
 				3A170CE62A9A676F00D8EBCE /* DeleteActivityUseCase.swift in Sources */,
