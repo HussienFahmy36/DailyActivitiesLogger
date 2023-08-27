@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0C53872A9ABFCE006C6787 /* DailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53842A9ABFCE006C6787 /* DailyActivity.swift */; };
+		3A0C53882A9ABFCE006C6787 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53852A9ABFCE006C6787 /* Repository.swift */; };
+		3A0C53892A9ABFCE006C6787 /* ActivitesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53862A9ABFCE006C6787 /* ActivitesUseCase.swift */; };
+		3A0C538F2A9AC085006C6787 /* RepositoryRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */; };
+		3A0C53922A9AC0D9006C6787 /* DailyActivityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */; };
+		3A0C53952A9AC3CC006C6787 /* RepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */; };
+		3A0C53972A9AC98E006C6787 /* ActivitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */; };
 		3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */; };
 		3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */; };
 		3A170CAB2A9A63F100D8EBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */; };
@@ -14,19 +21,6 @@
 		3A170CBD2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CBC2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift */; };
 		3A170CC72A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */; };
 		3A170CC92A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */; };
-		3A170CE92A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */; };
-		3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */; };
-		3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */; };
-		3A170CF12A9A68D700D8EBCE /* DALUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */; };
-		3A170D0D2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */; };
-		3A170D0F2A9A82F300D8EBCE /* DALActivityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */; };
-		3A170D112A9A841000D8EBCE /* ActivityListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */; };
-		3A170D142A9A850D00D8EBCE /* ActivitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */; };
-		3A170D1A2A9A880600D8EBCE /* DALActivitiesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */; };
-		3A170D1D2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */; };
-		3A170D1F2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */; };
-		3A170D222A9A892600D8EBCE /* DALActivityRealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */; };
-		3A170D242A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0C53842A9ABFCE006C6787 /* DailyActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyActivity.swift; sourceTree = "<group>"; };
+		3A0C53852A9ABFCE006C6787 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		3A0C53862A9ABFCE006C6787 /* ActivitesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitesUseCase.swift; sourceTree = "<group>"; };
+		3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRealm.swift; sourceTree = "<group>"; };
+		3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityRealm.swift; sourceTree = "<group>"; };
+		3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRemote.swift; sourceTree = "<group>"; };
+		3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModel.swift; sourceTree = "<group>"; };
 		3A170CA32A9A63EF00D8EBCE /* DailyActivitiesLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyActivitiesLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerApp.swift; sourceTree = "<group>"; };
 		3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
@@ -57,19 +58,6 @@
 		3A170CC22A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyActivitiesLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITests.swift; sourceTree = "<group>"; };
 		3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayActivitiesUseCase.swift; sourceTree = "<group>"; };
-		3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterActivitiesUseCase.swift; sourceTree = "<group>"; };
-		3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityReminderUseCase.swift; sourceTree = "<group>"; };
-		3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALUseCase.swift; sourceTree = "<group>"; };
-		3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRepositoryProtocol.swift; sourceTree = "<group>"; };
-		3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivityEntity.swift; sourceTree = "<group>"; };
-		3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListUseCase.swift; sourceTree = "<group>"; };
-		3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModel.swift; sourceTree = "<group>"; };
-		3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRepository.swift; sourceTree = "<group>"; };
-		3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListDataSource.swift; sourceTree = "<group>"; };
-		3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivitiesListRealmDataSource.swift; sourceTree = "<group>"; };
-		3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DALActivityRealmEntity.swift; sourceTree = "<group>"; };
-		3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemDisplayable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +85,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0C53832A9ABFB6006C6787 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C538C2A9ABFE4006C6787 /* Repository */,
+				3A0C538B2A9ABFDC006C6787 /* Entities */,
+				3A0C538A2A9ABFD3006C6787 /* Use cases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3A0C538A2A9ABFD3006C6787 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C53862A9ABFCE006C6787 /* ActivitesUseCase.swift */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		3A0C538B2A9ABFDC006C6787 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C53842A9ABFCE006C6787 /* DailyActivity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3A0C538C2A9ABFE4006C6787 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C53852A9ABFCE006C6787 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3A0C538D2A9AC020006C6787 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C53932A9AC3AA006C6787 /* Repositories */,
+				3A0C53902A9AC0B1006C6787 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A0C53902A9AC0B1006C6787 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3A0C53932A9AC3AA006C6787 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */,
+				3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		3A170C9A2A9A63EF00D8EBCE = {
 			isa = PBXGroup;
 			children = (
@@ -120,11 +168,9 @@
 		3A170CA52A9A63EF00D8EBCE /* DailyActivitiesLogger */ = {
 			isa = PBXGroup;
 			children = (
-				3A170CDA2A9A64E000D8EBCE /* Data */,
+				3A0C538D2A9AC020006C6787 /* Data */,
+				3A0C53832A9ABFB6006C6787 /* Domain */,
 				3A170CD92A9A64CC00D8EBCE /* UI */,
-				3A170CD82A9A645400D8EBCE /* Domain */,
-				3A170CD72A9A644300D8EBCE /* Infrastructure */,
-				3A170CD62A9A643D00D8EBCE /* Common */,
 				3A170CD52A9A643500D8EBCE /* App */,
 				3A170CAC2A9A63F100D8EBCE /* Preview Content */,
 			);
@@ -165,30 +211,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		3A170CD62A9A643D00D8EBCE /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		3A170CD72A9A644300D8EBCE /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		3A170CD82A9A645400D8EBCE /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				3A170CEF2A9A68C800D8EBCE /* Interfaces */,
-				3A170D0B2A9A826200D8EBCE /* Repositories */,
-				3A170CDB2A9A667800D8EBCE /* Use cases */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		3A170CD92A9A64CC00D8EBCE /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,101 +219,13 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		3A170CDA2A9A64E000D8EBCE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D182A9A87BE00D8EBCE /* Repositories */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		3A170CDB2A9A667800D8EBCE /* Use cases */ = {
-			isa = PBXGroup;
-			children = (
-				3A170CEC2A9A681500D8EBCE /* Reminders */,
-				3A170CE72A9A679F00D8EBCE /* Displaying activiy */,
-				3A170CDE2A9A673400D8EBCE /* Manage activity */,
-			);
-			path = "Use cases";
-			sourceTree = "<group>";
-		};
-		3A170CDE2A9A673400D8EBCE /* Manage activity */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D102A9A841000D8EBCE /* ActivityListUseCase.swift */,
-			);
-			path = "Manage activity";
-			sourceTree = "<group>";
-		};
-		3A170CE72A9A679F00D8EBCE /* Displaying activiy */ = {
-			isa = PBXGroup;
-			children = (
-				3A170CE82A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift */,
-				3A170CEA2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift */,
-			);
-			path = "Displaying activiy";
-			sourceTree = "<group>";
-		};
-		3A170CEC2A9A681500D8EBCE /* Reminders */ = {
-			isa = PBXGroup;
-			children = (
-				3A170CED2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift */,
-			);
-			path = Reminders;
-			sourceTree = "<group>";
-		};
-		3A170CEF2A9A68C800D8EBCE /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				3A170CF02A9A68D700D8EBCE /* DALUseCase.swift */,
-				3A170D0E2A9A82F300D8EBCE /* DALActivityEntity.swift */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		3A170D0B2A9A826200D8EBCE /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D0C2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		3A170D122A9A84EF00D8EBCE /* ActivitiesList */ = {
 			isa = PBXGroup;
 			children = (
 				3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */,
-				3A170D132A9A850D00D8EBCE /* ActivitiesListViewModel.swift */,
-				3A170D232A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift */,
+				3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */,
 			);
 			path = ActivitiesList;
-			sourceTree = "<group>";
-		};
-		3A170D182A9A87BE00D8EBCE /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D202A9A88F700D8EBCE /* Entities */,
-				3A170D1B2A9A886E00D8EBCE /* Data Sources */,
-				3A170D192A9A880600D8EBCE /* DALActivitiesListRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		3A170D1B2A9A886E00D8EBCE /* Data Sources */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D1C2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift */,
-				3A170D1E2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift */,
-			);
-			path = "Data Sources";
-			sourceTree = "<group>";
-		};
-		3A170D202A9A88F700D8EBCE /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				3A170D212A9A892600D8EBCE /* DALActivityRealmEntity.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,21 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A170D0D2A9A828000D8EBCE /* DALActivitiesListRepositoryProtocol.swift in Sources */,
-				3A170D142A9A850D00D8EBCE /* ActivitiesListViewModel.swift in Sources */,
-				3A170D1A2A9A880600D8EBCE /* DALActivitiesListRepository.swift in Sources */,
-				3A170D222A9A892600D8EBCE /* DALActivityRealmEntity.swift in Sources */,
-				3A170D112A9A841000D8EBCE /* ActivityListUseCase.swift in Sources */,
-				3A170CEB2A9A67D500D8EBCE /* FilterActivitiesUseCase.swift in Sources */,
-				3A170D242A9A8C8B00D8EBCE /* ActivityItemDisplayable.swift in Sources */,
-				3A170D1F2A9A88D500D8EBCE /* DALActivitiesListRealmDataSource.swift in Sources */,
+				3A0C53892A9ABFCE006C6787 /* ActivitesUseCase.swift in Sources */,
+				3A0C538F2A9AC085006C6787 /* RepositoryRealm.swift in Sources */,
 				3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */,
-				3A170CEE2A9A68BE00D8EBCE /* DailyActivityReminderUseCase.swift in Sources */,
-				3A170CF12A9A68D700D8EBCE /* DALUseCase.swift in Sources */,
-				3A170D1D2A9A887E00D8EBCE /* DALActivitiesListDataSource.swift in Sources */,
-				3A170D0F2A9A82F300D8EBCE /* DALActivityEntity.swift in Sources */,
-				3A170CE92A9A67C000D8EBCE /* DisplayActivitiesUseCase.swift in Sources */,
 				3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */,
+				3A0C53972A9AC98E006C6787 /* ActivitiesListViewModel.swift in Sources */,
+				3A0C53872A9ABFCE006C6787 /* DailyActivity.swift in Sources */,
+				3A0C53952A9AC3CC006C6787 /* RepositoryRemote.swift in Sources */,
+				3A0C53882A9ABFCE006C6787 /* Repository.swift in Sources */,
+				3A0C53922A9AC0D9006C6787 /* DailyActivityRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

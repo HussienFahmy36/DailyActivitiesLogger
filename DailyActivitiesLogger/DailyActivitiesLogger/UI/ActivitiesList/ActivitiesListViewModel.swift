@@ -2,31 +2,21 @@
 //  ActivitiesListViewModel.swift
 //  DailyActivitiesLogger
 //
-//  Created by Hussien Gamal Mohammed on 26/08/2023.
+//  Created by Hussien Gamal Mohammed on 27/08/2023.
 //
 
 import SwiftUI
 
-@MainActor
 class ActivitiesListViewModel: ObservableObject {
-    private var useCase: ActivityListUseCase
+    @Published var activities: [DailyActivity] = []
+    private var useCase: ActivitesUseCase
     
-    @Published var activitiesList: [ActivityItemDisplayable] = []
-    
-    init(useCase: ActivityListUseCase) {
+    init(useCase: ActivitesUseCase) {
         self.useCase = useCase
         
         Task {
-            do {
-                let result = try await useCase.query().map {
-                    ActivityItemDisplayable(name: $0.name, content: $0.content, timeStamp: $0.timeStamp, type: $0.type)
-                }
-                activitiesList = result
-            }
-            catch {
-                
-            }
+            activities = try await useCase.read()
         }
+        
     }
 }
-

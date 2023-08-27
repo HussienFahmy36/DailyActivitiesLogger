@@ -11,12 +11,7 @@ import SwiftUI
 struct DailyActivitiesLoggerApp: App {
     var body: some Scene {
         WindowGroup {
-            ActivitiesListView(viewModel:
-                                ActivitiesListViewModel(
-                                    useCase:
-                                        ActivityListUseCase(
-                                            repo: DALActivitiesListRepository(
-                                                dataSource: DALActivitiesListRealmDataSource()))))
+            ActivitiesListView(viewModel: ActivitiesListViewModel(useCase: ActivitesUseCase(repo: RepositoryRealm())))
         }
     }
 }
