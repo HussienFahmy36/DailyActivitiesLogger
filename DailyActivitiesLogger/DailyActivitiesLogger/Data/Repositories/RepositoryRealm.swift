@@ -24,6 +24,6 @@ class RepositoryRealm: Repository {
     }
     
     func save(_ activity: DailyActivity) async throws {
-        data.append(DailyActivityRealm(name: activity.name, content: activity.content, type: activity.type.rawValue))
+        data.append(DailyActivityRealm(name: activity.name, content: activity.content ?? "", type: activity.type.rawValue))
     }
 }

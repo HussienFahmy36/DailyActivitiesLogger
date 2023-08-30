@@ -24,7 +24,7 @@ class RepositoryCoreData: Repository {
         let context = persistanceContainer.viewContext
         let items = try context.fetch(DailyActivityCoreData.fetchRequest())
         return items.map {
-            DailyActivity(name: $0.name ?? "", content: $0.content ?? "", type: DailyActivityType(rawValue: Int($0.type))!)
+            DailyActivity(name: $0.title ?? "", type: DailyActivityType(rawValue: Int($0.type))!)
         }
     }
     
@@ -32,14 +32,19 @@ class RepositoryCoreData: Repository {
         
     }
     func delete(_ activtiy: DailyActivity) async throws {
-        
+        let context = persistanceContainer.viewContext
+        let request = NSFetchRequest<DailyActivityCoreData>(entityName: "DailyActivityCoreData")
+        request.predicate = NSPredicate(format: "title = %@ ", activtiy.name)
+        if let fetchedEntity = try context.fetch(request).first {
+            context.delete(fetchedEntity)
+            try context.save()
+        }
     }
     
     func save(_ activity: DailyActivity) async throws {
         let context = persistanceContainer.viewContext       
         let dailyActivity = DailyActivityCoreData(context: context)
-        dailyActivity.name = activity.name
-        dailyActivity.content = activity.content
+        dailyActivity.title = activity.name
         dailyActivity.type = Int16(activity.type.rawValue)
         try context.save()
             

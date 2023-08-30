@@ -13,8 +13,11 @@ struct ActivitiesListView: View {
         NavigationView {
                Form {
                    Section(header: Text("Today")) {
-                       List(viewModel.activities) {
-                           Text($0.name)
+                       List {
+                           ForEach(viewModel.activities) { Text($0.name) }
+                               .onDelete { indexSet in
+                                   viewModel.onDelete(index: indexSet.first ?? 0)
+                               }
                        }
 
                    }

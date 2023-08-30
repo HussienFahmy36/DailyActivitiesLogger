@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@MainActor
 class ActivitiesListViewModel: ObservableObject {
     @Published var activities: [DailyActivity] = []
     @Published var showAddActivity = false
@@ -19,6 +18,19 @@ class ActivitiesListViewModel: ObservableObject {
         loadActivities()
     }
     
+    func onDelete(index: Int) {
+        Task {
+            await MainActor.run {
+                Task {
+                    do {
+                        try await useCase.delete(activities[index])
+                    } catch {
+                    }
+                }
+            }
+        }
+    }
+
     func loadActivities() {
         Task {
             activities = try await useCase.read()
