@@ -7,16 +7,26 @@
 
 import SwiftUI
 
+@MainActor
 class ActivitiesListViewModel: ObservableObject {
     @Published var activities: [DailyActivity] = []
-    private var useCase: ActivitesUseCase
+    @Published var showAddActivity = false
     
+    var useCase: ActivitesUseCase
+
     init(useCase: ActivitesUseCase) {
         self.useCase = useCase
-        
+        loadActivities()
+    }
+    
+    func loadActivities() {
         Task {
             activities = try await useCase.read()
         }
         
+    }
+    
+    func add() {
+        showAddActivity.toggle()
     }
 }

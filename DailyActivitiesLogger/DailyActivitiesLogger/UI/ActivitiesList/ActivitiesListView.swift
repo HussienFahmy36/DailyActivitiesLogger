@@ -10,10 +10,33 @@ import CoreData
 struct ActivitiesListView: View {
     @ObservedObject var viewModel: ActivitiesListViewModel
     var body: some View {
-        List(viewModel.activities) {
-            Text($0.name)
-        }
+        NavigationView {
+               Form {
+                   Section(header: Text("Today")) {
+                       List(viewModel.activities) {
+                           Text($0.name)
+                       }
+
+                   }
+               }
+               .sheet(isPresented: $viewModel.showAddActivity) {
+                   AddActivityView(viewModel: AddActivityViewModel(useCase: viewModel.useCase){
+                       viewModel.loadActivities()
+                   })
+               }
+               .toolbar {
+                   ToolbarItem(placement: .navigationBarTrailing) {
+                       Button("+") {
+                           viewModel.add()
+                       }
+                   }
+               }
+           }
+
+        .navigationTitle("Test")
+
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

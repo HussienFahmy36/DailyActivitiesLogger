@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct RepositoryRealm: Repository {
+class RepositoryRealm: Repository {
+    var data: [DailyActivityRealm] = []
     func getAll() async throws -> [DailyActivity] {
-        [
-        DailyActivityRealm(name: "Coding", content: "Coding reminder", type: 0),
-        DailyActivityRealm(name: "Watching movie", content: "Watching 7awa2 12", type: 1)
-        ]
+        data
             .map {
                 DailyActivity(name: $0.name, content: $0.content, type: DailyActivityType(rawValue: $0.type) ?? .coding)
             }
@@ -26,5 +24,6 @@ struct RepositoryRealm: Repository {
     }
     
     func save(_ activity: DailyActivity) async throws {
+        data.append(DailyActivityRealm(name: activity.name, content: activity.content, type: activity.type.rawValue))
     }
 }

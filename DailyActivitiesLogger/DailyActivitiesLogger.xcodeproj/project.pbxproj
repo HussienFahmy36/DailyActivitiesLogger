@@ -11,9 +11,9 @@
 		3A0C53882A9ABFCE006C6787 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53852A9ABFCE006C6787 /* Repository.swift */; };
 		3A0C53892A9ABFCE006C6787 /* ActivitesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53862A9ABFCE006C6787 /* ActivitesUseCase.swift */; };
 		3A0C538F2A9AC085006C6787 /* RepositoryRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */; };
-		3A0C53922A9AC0D9006C6787 /* DailyActivityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */; };
 		3A0C53952A9AC3CC006C6787 /* RepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */; };
 		3A0C53972A9AC98E006C6787 /* ActivitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */; };
+		3A0C53992A9ACCCE006C6787 /* DailyActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C53982A9ACCCE006C6787 /* DailyActivitiesApp.swift */; };
 		3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */; };
 		3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */; };
 		3A170CAB2A9A63F100D8EBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */; };
@@ -21,6 +21,12 @@
 		3A170CBD2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CBC2A9A63F100D8EBCE /* DailyActivitiesLoggerTests.swift */; };
 		3A170CC72A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */; };
 		3A170CC92A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */; };
+		3A4FDDFA2A9F920A00B5B57C /* RepositoryCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4FDDF92A9F920A00B5B57C /* RepositoryCoreData.swift */; };
+		3A4FDDFC2A9F926000B5B57C /* DailyActivityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4FDDFB2A9F925F00B5B57C /* DailyActivityRealm.swift */; };
+		3A4FDE1B2A9FD9EE00B5B57C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A4FDE192A9FD9EE00B5B57C /* Model.xcdatamodeld */; };
+		3A7C51172A9B6B6E003C30F7 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C51162A9B6B6E003C30F7 /* UseCaseProvider.swift */; };
+		3A7C511A2A9B81DE003C30F7 /* AddActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C51192A9B81DE003C30F7 /* AddActivityViewModel.swift */; };
+		3A7C511C2A9B81F0003C30F7 /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C511B2A9B81F0003C30F7 /* AddActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +51,9 @@
 		3A0C53852A9ABFCE006C6787 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		3A0C53862A9ABFCE006C6787 /* ActivitesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitesUseCase.swift; sourceTree = "<group>"; };
 		3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRealm.swift; sourceTree = "<group>"; };
-		3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityRealm.swift; sourceTree = "<group>"; };
 		3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRemote.swift; sourceTree = "<group>"; };
 		3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewModel.swift; sourceTree = "<group>"; };
+		3A0C53982A9ACCCE006C6787 /* DailyActivitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesApp.swift; sourceTree = "<group>"; };
 		3A170CA32A9A63EF00D8EBCE /* DailyActivitiesLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyActivitiesLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerApp.swift; sourceTree = "<group>"; };
 		3A170CA82A9A63EF00D8EBCE /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,12 @@
 		3A170CC22A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyActivitiesLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A170CC62A9A63F100D8EBCE /* DailyActivitiesLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITests.swift; sourceTree = "<group>"; };
 		3A170CC82A9A63F100D8EBCE /* DailyActivitiesLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivitiesLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A4FDDF92A9F920A00B5B57C /* RepositoryCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoreData.swift; sourceTree = "<group>"; };
+		3A4FDDFB2A9F925F00B5B57C /* DailyActivityRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyActivityRealm.swift; sourceTree = "<group>"; };
+		3A4FDE1A2A9FD9EE00B5B57C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3A7C51162A9B6B6E003C30F7 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		3A7C51192A9B81DE003C30F7 /* AddActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewModel.swift; sourceTree = "<group>"; };
+		3A7C511B2A9B81F0003C30F7 /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +143,8 @@
 		3A0C53902A9AC0B1006C6787 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				3A0C53912A9AC0D9006C6787 /* DailyActivityRealm.swift */,
+				3A4FDDFB2A9F925F00B5B57C /* DailyActivityRealm.swift */,
+				3A4FDE192A9FD9EE00B5B57C /* Model.xcdatamodeld */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -141,8 +154,17 @@
 			children = (
 				3A0C538E2A9AC084006C6787 /* RepositoryRealm.swift */,
 				3A0C53942A9AC3CC006C6787 /* RepositoryRemote.swift */,
+				3A4FDDF92A9F920A00B5B57C /* RepositoryCoreData.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3A0C539A2A9ACD0B006C6787 /* Use case provider */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C51162A9B6B6E003C30F7 /* UseCaseProvider.swift */,
+			);
+			path = "Use case provider";
 			sourceTree = "<group>";
 		};
 		3A170C9A2A9A63EF00D8EBCE = {
@@ -204,9 +226,11 @@
 		3A170CD52A9A643500D8EBCE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				3A0C539A2A9ACD0B006C6787 /* Use case provider */,
 				3A170CAD2A9A63F100D8EBCE /* Preview Assets.xcassets */,
 				3A170CA62A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift */,
 				3A170CAA2A9A63F100D8EBCE /* Assets.xcassets */,
+				3A0C53982A9ACCCE006C6787 /* DailyActivitiesApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -214,6 +238,7 @@
 		3A170CD92A9A64CC00D8EBCE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C51182A9B81CF003C30F7 /* Add Activity */,
 				3A170D122A9A84EF00D8EBCE /* ActivitiesList */,
 			);
 			path = UI;
@@ -226,6 +251,15 @@
 				3A0C53962A9AC98E006C6787 /* ActivitiesListViewModel.swift */,
 			);
 			path = ActivitiesList;
+			sourceTree = "<group>";
+		};
+		3A7C51182A9B81CF003C30F7 /* Add Activity */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C51192A9B81DE003C30F7 /* AddActivityViewModel.swift */,
+				3A7C511B2A9B81F0003C30F7 /* AddActivityView.swift */,
+			);
+			path = "Add Activity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,13 +394,19 @@
 			files = (
 				3A0C53892A9ABFCE006C6787 /* ActivitesUseCase.swift in Sources */,
 				3A0C538F2A9AC085006C6787 /* RepositoryRealm.swift in Sources */,
+				3A4FDE1B2A9FD9EE00B5B57C /* Model.xcdatamodeld in Sources */,
 				3A170CA92A9A63EF00D8EBCE /* ActivitiesListView.swift in Sources */,
+				3A4FDDFC2A9F926000B5B57C /* DailyActivityRealm.swift in Sources */,
+				3A7C51172A9B6B6E003C30F7 /* UseCaseProvider.swift in Sources */,
 				3A170CA72A9A63EF00D8EBCE /* DailyActivitiesLoggerApp.swift in Sources */,
+				3A4FDDFA2A9F920A00B5B57C /* RepositoryCoreData.swift in Sources */,
 				3A0C53972A9AC98E006C6787 /* ActivitiesListViewModel.swift in Sources */,
 				3A0C53872A9ABFCE006C6787 /* DailyActivity.swift in Sources */,
+				3A0C53992A9ACCCE006C6787 /* DailyActivitiesApp.swift in Sources */,
 				3A0C53952A9AC3CC006C6787 /* RepositoryRemote.swift in Sources */,
+				3A7C511A2A9B81DE003C30F7 /* AddActivityViewModel.swift in Sources */,
+				3A7C511C2A9B81F0003C30F7 /* AddActivityView.swift in Sources */,
 				3A0C53882A9ABFCE006C6787 /* Repository.swift in Sources */,
-				3A0C53922A9AC0D9006C6787 /* DailyActivityRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +725,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A4FDE192A9FD9EE00B5B57C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A4FDE1A2A9FD9EE00B5B57C /* Model.xcdatamodel */,
+			);
+			currentVersion = 3A4FDE1A2A9FD9EE00B5B57C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3A170C9B2A9A63EF00D8EBCE /* Project object */;
 }
